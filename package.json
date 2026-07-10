@@ -9,6 +9,6 @@
   "keywords": ["educación", "química", "tabla periódica"],
   "license": "MIT",
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   }
 }
