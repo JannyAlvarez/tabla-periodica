@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla Periódica - Aprende Jugando</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>⚛️ Elementos Químicos</h1>
+        <p>Aprende jugando | Puntos: <span id="score">0</span></p>
+      </header>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="aprende">📚 Aprende</button>
+        <button class="tab-btn" data-tab="quiz">🎮 Quiz</button>
+        <button class="tab-btn" data-tab="clasifica">🎯 Clasifica</button>
+      </div>
+
+      <!-- Tab: Aprende -->
+      <div id="aprende" class="tab-content active">
+        <div class="cards-container">
+          <button class="btn-nav" id="prevBtn">← Anterior</button>
+          <div class="card-display">
+            <div class="card" id="elementCard">
+              <div class="card-front">
+                <div class="symbol" id="cardSymbol">H</div>
+                <div class="name" id="cardName">Hidrógeno</div>
+              </div>
+              <div class="card-back">
+                <p id="cardInfo">Haz click para ver info</p>
+              </div>
+            </div>
+          </div>
+          <button class="btn-nav" id="nextBtn">Siguiente →</button>
+        </div>
+        <div class="element-info-large">
+          <h2 id="infoName">Hidrógeno</h2>
+          <p id="infoData"></p>
+        </div>
+      </div>
+
+      <!-- Tab: Quiz -->
+      <div id="quiz" class="tab-content">
+        <div class="quiz-container">
+          <div class="question">
+            <h2 id="quizQuestion">¿Cuál es el símbolo del Oxígeno?</h2>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p id="progressText">1 / 10</p>
+          </div>
+          <div class="answer-options" id="answerOptions"></div>
+          <button class="btn-reset" id="skipBtn">Saltar pregunta</button>
+        </div>
+      </div>
+
+      <!-- Tab: Clasifica -->
+      <div id="clasifica" class="tab-content">
+        <div class="classify-container">
+          <div class="classification-info">
+            <h2>Arrastra los elementos a su categoría</h2>
+            <p>Clasifica correctamente para ganar puntos</p>
+          </div>
+          <div class="classify-board">
+            <div class="category-drop" id="drop1">
+              <h3>Metales</h3>
+              <div class="drop-zone"></div>
+            </div>
+            <div class="category-drop" id="drop2">
+              <h3>No Metales</h3>
+              <div class="drop-zone"></div>
+            </div>
+            <div class="category-drop" id="drop3">
+              <h3>Gases Nobles</h3>
+              <div class="drop-zone"></div>
+            </div>
+            <div class="category-drop" id="drop4">
+              <h3>Metaloides</h3>
+              <div class="drop-zone"></div>
+            </div>
+          </div>
+          <div class="elements-to-classify" id="elementsToClassify"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

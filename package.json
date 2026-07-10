@@ -1,0 +1,14 @@
+{
+  "name": "tabla-periodica-juego",
+  "version": "1.0.0",
+  "description": "Juego educativo de la tabla periódica",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["educación", "química", "tabla periódica"],
+  "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  }
+}
