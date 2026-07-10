@@ -1,9 +1,11 @@
 {
+  "buildCommand": "echo 'Static build'",
+  "outputDirectory": "public",
+  "cleanUrls": true,
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/index.html"
     }
-  ],
-  "cleanUrls": true
+  ]
 }
